@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import HotelList from './pages/Hotels/HotelList';
+import HotelsOutlet from './pages/Hotels/HotelsOutlet';
+import Hotel from './pages/Hotels/Hotel';
+import Master from './Layouts/Master';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className='App'>
+			<Router>
+				<Routes>
+					<Route path='/' element={<Master />}>
+						<Route index element={<Home />} />
+						<Route path='hotels' element={<HotelsOutlet />}>
+							<Route index element={<HotelList />} />
+							<Route path=':hotelId' element={<Hotel />} />
+						</Route>
+					</Route>
+					<Route path='*' element={<NotFound />} />
+				</Routes>
+			</Router>
+		</div>
+	);
+};
 
 export default App;

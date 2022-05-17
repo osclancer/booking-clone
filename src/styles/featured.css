@@ -1,0 +1,11 @@
+.featured__item {
+    @apply rounded-xl h-80 relative cursor-pointer overflow-hidden;
+}
+
+.featured__img {
+    @apply w-full h-full object-cover transition-all duration-200 ease-in;
+}
+
+.featured__img:hover {
+    transform: scale(1.1);
+}

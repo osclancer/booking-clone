@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .btn {
+        @apply bg-gray-700 border-none outline-none cursor-pointer py-2 px-4;
+    }
+}
+
+.btn--primary {
+    @apply btn bg-primary hover:text-primaryHover transition-all duration-200 ease-in-out
+}
+
+.btn--info {
+    @apply btn bg-primaryHover text-white;
+}
+
+.btn--light {
+    @apply btn bg-white text-primaryHover;
+}
+
+.container {
+    @apply max-w-6xl mx-auto py-2 px-5;
+}

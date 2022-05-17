@@ -1,0 +1,19 @@
+.header { z-index: 2; }
+
+.header__btn {
+    @apply my-1 rounded-3xl py-2 px-4 bg-transparent text-white hover:bg-primaryHover transition-all duration-200 ease-in-out;
+}
+
+.header__btn--active {
+    @apply border border-white;
+}
+
+.header__search-bar {
+    @apply hidden md:grid grid-cols-1 lg:grid-cols-10 bg-white rounded-md absolute max-w-6xl;
+    bottom: -24px;
+}
+
+.header__search-icons {
+    @apply  mx-2 text-gray-400;
+    transform: scale(1.2);
+}
