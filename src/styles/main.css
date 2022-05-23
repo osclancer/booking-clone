@@ -9,7 +9,7 @@
 }
 
 .btn--primary {
-    @apply btn bg-primary hover:text-primaryHover transition-all duration-200 ease-in-out
+    @apply btn bg-primary text-white hover:bg-primaryHover transition-all duration-200 ease-in-out
 }
 
 .btn--info {
@@ -22,4 +22,8 @@
 
 .container {
     @apply max-w-6xl mx-auto py-2 px-5;
+}
+
+.btn--block {
+    @apply w-full;
 }

@@ -1,10 +1,5 @@
 import {
-	Attractions,
-	Bed,
 	CalendarMonthOutlined,
-	DirectionsCarFilled,
-	FlightTakeoff,
-	Hail,
 	LocationOnOutlined,
 	PersonOutlined,
 } from '@mui/icons-material';
@@ -14,6 +9,7 @@ import '../styles/header.css';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format } from 'date-fns';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 	const [openDate, setOpenDate] = useState(false);
@@ -46,25 +42,8 @@ const Header = () => {
 	return (
 		<div className='header bg-primary w-full relative'>
 			<div className='container relative'>
-				<div className='flex space-x-2 flex-wrap'>
-					<button className='header__btn header__btn--active'>
-						<Bed /> Stays
-					</button>
-					<button className='header__btn'>
-						<FlightTakeoff /> Flights
-					</button>
-					<button className='header__btn'>
-						<DirectionsCarFilled /> Car rental
-					</button>
-					<button className='header__btn'>
-						<Attractions /> Attractions
-					</button>
-					<button className='header__btn'>
-						<Hail /> Airport taxi
-					</button>
-				</div>
 
-				<div className='py-24 lg:pr-40 flex flex-col items-start justify-center space-y-5'>
+				<div className='py-16 lg:pr-40 flex flex-col items-start justify-center space-y-5'>
 					<h2 className='text-5xl my-3 text-white font-semibold'>
 						A lifetime of discounts? It's Genius.
 					</h2>
@@ -203,9 +182,12 @@ const Header = () => {
 						)}
 					</div>
 
-					<button className='btn--info border-4 rounded-tr-md rounded-br-md'>
+					<Link
+						to='/hotels'
+						className='btn--info border-4 rounded-tr-md rounded-br-md flex justify-center items-center'
+					>
 						Search
-					</button>
+					</Link>
 				</div>
 			</div>
 		</div>
