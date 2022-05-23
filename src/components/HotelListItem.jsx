@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HotelListItem = () => {
 	return (
@@ -47,9 +48,9 @@ const HotelListItem = () => {
 						<small className='text-gray-600'>
 							includes taxes and fees
 						</small>
-						<button className='btn--info btn--block rounded'>
+						<Link to="/hotels/2" className='btn--info btn--block rounded'>
 							See availability
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>
