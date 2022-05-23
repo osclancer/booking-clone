@@ -1,7 +1,7 @@
 const PropertyList = () => {
 	return (
 		<div className='container'>
-			<div className='grid grid-cols-2 md:grid-cols-5 gap-3 cursor-pointer'>
+			<div className='grid grid-cols-2 md:grid-cols-5 gap-3'>
 				<div>
 					<div className='h-56 overflow-hidden'>
 						<img
