@@ -9,7 +9,7 @@
 }
 
 .header__search-bar {
-    @apply hidden md:grid grid-cols-1 lg:grid-cols-10 bg-white rounded-md absolute max-w-6xl;
+    @apply hidden lg:grid grid-cols-10 rounded-md absolute max-w-6xl;
     bottom: -24px;
 }
 

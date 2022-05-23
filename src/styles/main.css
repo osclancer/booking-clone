@@ -8,6 +8,10 @@
     }
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .btn--primary {
     @apply btn bg-primary text-white hover:bg-primaryHover transition-all duration-200 ease-in-out
 }

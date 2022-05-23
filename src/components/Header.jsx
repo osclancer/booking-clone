@@ -57,7 +57,7 @@ const Header = () => {
 				</div>
 
 				<div className='header__search-bar'>
-					<div className='lg:col-span-4 flex border-4 border-orange-400 py-3 rounded-tl-md rounded-bl-md'>
+					<div className='lg:col-span-4 flex border-4 bg-white w-full border-orange-400 py-3 rounded-tl-md rounded-bl-md'>
 						<LocationOnOutlined className='header__search-icons' />
 						<input
 							type='text'
@@ -66,7 +66,7 @@ const Header = () => {
 							style={{ width: '90%' }}
 						/>
 					</div>
-					<div className='lg:col-span-2 flex border-4 border-orange-400 py-3 relative'>
+					<div className='lg:col-span-2 flex border-4 bg-white w-full border-orange-400 py-3 relative'>
 						<CalendarMonthOutlined className='header__search-icons' />
 						<span
 							className='text-warmGray-400 cursor-pointer'
@@ -96,7 +96,7 @@ const Header = () => {
 							</div>
 						)}
 					</div>
-					<div className='lg:col-span-3 flex border-4 border-orange-400 py-3 relative'>
+					<div className='lg:col-span-3 flex border-4 bg-white w-full border-orange-400 py-3 relative'>
 						<PersonOutlined className='header__search-icons' />
 						<span
 							className='text-warmGray-400 cursor-pointer'
