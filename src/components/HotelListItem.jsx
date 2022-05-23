@@ -9,7 +9,7 @@ const HotelListItem = () => {
 				className='w-full object-cover md:col-span-2 cols'
 			/>
 
-			<div className='w-full grid md:flex items-center justify-between gap-3 md:col-span-4'>
+			<div className='w-full grid md:flex items-center md:justify-between gap-3 md:col-span-4'>
 				<div className='space-y-2 flex flex-col' style={{ flex: '2' }}>
 					<h2 className='text-xl font-semibold'>
 						Tower street apartment
